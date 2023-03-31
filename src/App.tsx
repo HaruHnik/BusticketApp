@@ -139,7 +139,9 @@ function App() {
                     const isCommonWithDirectLine = routes.find(
                         (data) =>
                             data.startBus.id === secondBus.id ||
-                            data.endBus.id === secondBus.id
+                            data.endBus.id === secondBus.id ||
+                            data.startBus.id === currentBus.id ||
+                            data.endBus.id === currentBus.id
                     );
                     const isAlreadyExist = routes.find(
                         (data) =>
